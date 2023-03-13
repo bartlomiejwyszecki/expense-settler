@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@expense-settler-nx/angular-shared-lib": [
+        "libs/angular-shared-lib/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
