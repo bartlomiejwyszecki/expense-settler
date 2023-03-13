@@ -5,6 +5,7 @@
   "scripts": {},
   "private": true,
   "devDependencies": {
+    "15": "^0.0.0",
     "@angular-devkit/build-angular": "~15.2.0",
     "@angular-devkit/core": "~15.2.0",
     "@angular-devkit/schematics": "~15.2.0",
@@ -14,13 +15,14 @@
     "@angular/cli": "~15.2.0",
     "@angular/compiler-cli": "~15.2.0",
     "@angular/language-service": "~15.2.0",
-    "@nrwl/angular": "^15.8.6",
+    "@nrwl/angular": "15.8.6",
     "@nrwl/eslint-plugin-nx": "15.8.6",
     "@nrwl/jest": "15.8.6",
     "@nrwl/js": "15.8.6",
     "@nrwl/linter": "15.8.6",
-    "@nrwl/nx-cloud": "latest",
-    "@nrwl/workspace": "15.5.3",
+    "@nrwl/nx-cloud": "15.2.1",
+    "@nrwl/workspace": "15.8.6",
+    "@nxtend/capacitor": "^13.0.0",
     "@nxtend/ionic-angular": "^13.1.0",
     "@schematics/angular": "~15.2.0",
     "@types/jest": "^29.4.0",
@@ -33,7 +35,7 @@
     "jest-environment-jsdom": "^29.4.1",
     "jest-preset-angular": "~13.0.0",
     "ng-packagr": "~15.2.2",
-    "nx": "15.5.3",
+    "nx": "15.8.6",
     "postcss": "^8.4.5",
     "postcss-import": "~14.1.0",
     "postcss-preset-env": "~7.5.0",
@@ -57,3 +59,4 @@
     "zone.js": "~0.12.0"
   }
 }
+
