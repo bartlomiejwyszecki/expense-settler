@@ -1,8 +1,9 @@
+import { IUser, User } from '@expense-settler-monorepo/shared-lib';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getData(): { message: string } {
-    return { message: 'Welcome to es-server!' };
+  getData(): IUser[] {
+    return [];
   }
 }
