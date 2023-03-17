@@ -6,9 +6,12 @@ import * as Joi from '@hapi/joi';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { NODE_ENV } from './constants/app.constant';
+<<<<<<< HEAD
 
 import { MongooseModule } from '@nestjs/mongoose';
 import { UsersModule } from './users/users.module';
+=======
+>>>>>>> 8efff6e (types libs added, env file defined, configmodule defined)
 
 @Module({
   imports: [
@@ -26,8 +29,11 @@ import { UsersModule } from './users/users.module';
         POSTGRES_DB: Joi.string().required(),
       }),
     }),
+<<<<<<< HEAD
     MongooseModule.forRoot('mongodb://localhost/authentication'),
     UsersModule,
+=======
+>>>>>>> 8efff6e (types libs added, env file defined, configmodule defined)
   ],
   controllers: [AppController],
   providers: [AppService],
