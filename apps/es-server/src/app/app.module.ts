@@ -7,6 +7,9 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { NODE_ENV } from './constants/app.constant';
 
+import { MongooseModule } from '@nestjs/mongoose';
+import { UsersModule } from './users/users.module';
+
 @Module({
   imports: [
     SharedLibModule,
@@ -23,6 +26,8 @@ import { NODE_ENV } from './constants/app.constant';
         POSTGRES_DB: Joi.string().required(),
       }),
     }),
+    MongooseModule.forRoot('mongodb://localhost/authentication'),
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
