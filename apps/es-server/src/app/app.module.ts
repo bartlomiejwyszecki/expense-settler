@@ -13,6 +13,9 @@ import { UsersModule } from './users/users.module';
 =======
 >>>>>>> 8efff6e (types libs added, env file defined, configmodule defined)
 
+import { MongooseModule } from '@nestjs/mongoose';
+import { UsersModule } from './users/users.module';
+
 @Module({
   imports: [
     SharedLibModule,
@@ -30,10 +33,15 @@ import { UsersModule } from './users/users.module';
       }),
     }),
 <<<<<<< HEAD
+<<<<<<< HEAD
     MongooseModule.forRoot('mongodb://localhost/authentication'),
     UsersModule,
 =======
 >>>>>>> 8efff6e (types libs added, env file defined, configmodule defined)
+=======
+    MongooseModule.forRoot('mongodb://localhost/authentication'),
+    UsersModule,
+>>>>>>> 798cb54 (Mongoose init, users module init)
   ],
   controllers: [AppController],
   providers: [AppService],
