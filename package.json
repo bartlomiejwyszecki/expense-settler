@@ -70,14 +70,7 @@
     "bcrypt": "^5.1.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
-<<<<<<< HEAD
-<<<<<<< HEAD
     "mongoose": "^7.0.2",
-=======
->>>>>>> 7d1ba11 (.env file added, dependencies added in nest js project)
-=======
-    "mongoose": "^7.0.2",
->>>>>>> 798cb54 (Mongoose init, users module init)
     "pg": "^8.10.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.0.0",
