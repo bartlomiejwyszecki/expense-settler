@@ -9,6 +9,7 @@ import { NODE_ENV } from './constants/app.constant';
 
 import { MongooseModule } from '@nestjs/mongoose';
 import { UsersModule } from './users/users.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -28,6 +29,7 @@ import { UsersModule } from './users/users.module';
     }),
     MongooseModule.forRoot('mongodb://localhost/authentication'),
     UsersModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
