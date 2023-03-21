@@ -8,8 +8,8 @@ import { AppService } from './app.service';
 import { NODE_ENV } from './constants/app.constant';
 
 import { MongooseModule } from '@nestjs/mongoose';
-import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -28,8 +28,8 @@ import { AuthModule } from './auth/auth.module';
       }),
     }),
     MongooseModule.forRoot('mongodb://localhost/authentication'),
-    UsersModule,
     AuthModule,
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
