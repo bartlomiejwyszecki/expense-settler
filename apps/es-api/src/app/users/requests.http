@@ -10,7 +10,7 @@ GET http://localhost:3333/auth/1
 content-type: application/json
 
 # ## FIND ALL USERS WITH EMAIL
-# GET http://localhost:3333/auth?email=ashjgjhggjdf@sadads.com
+# GET http://localhost:3333/auth
 
 ### DELETE USER WITH GIVEN ID
 # DELETE http://localhost:3333/auth/2
