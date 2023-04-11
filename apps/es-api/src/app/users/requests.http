@@ -2,12 +2,20 @@
 # content-type: application/json
 
 # {
-#   "email": "asdf@sadads.com",
+#   "email": "test2@test.com",
 #   "password": "asdfasdf"
 # }
 
-GET http://localhost:3333/auth/1
+POST http://localhost:3333/auth/signin
 content-type: application/json
+
+{
+  "email": "test2@test.com",
+  "password": "asdfasdf"
+}
+
+# GET http://localhost:3333/auth/1
+# content-type: application/json
 
 # ## FIND ALL USERS WITH EMAIL
 # GET http://localhost:3333/auth
