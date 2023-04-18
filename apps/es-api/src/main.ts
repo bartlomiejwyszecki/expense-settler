@@ -10,16 +10,26 @@ import { ValidationPipe } from '@nestjs/common';
 
 import { AppModule } from './app/app.module';
 
+const cookieSession = require('cookie-session');
+
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  app.useGlobalPipes(new ValidationPipe({
-    whitelist: true,
-  }));
+
+  app.use(
+    cookieSession({
+      keys: ['asdf'],
+    })
+  );
+
+  app.useGlobalPipes(
+    new ValidationPipe({
+      whitelist: true,
+    })
+  );
+
   const port = process.env.PORT || 3333;
   await app.listen(port);
-  Logger.log(
-    `🚀 Application is running on: http://localhost:${port}`
-  );
+  Logger.log(`🚀 Application is running on: http://localhost:${port}`);
 }
 
 bootstrap();
