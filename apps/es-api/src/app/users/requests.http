@@ -17,9 +17,11 @@ content-type: application/json
   "password": "asdasdasdasd"
 }
 
+### Sign out an existsing user
+POST http://localhost:3333/auth/signout
+
 ### Get me
 GET http://localhost:3333/auth/me
-content-type: application/json
 
 # GET http://localhost:3333/auth/1
 # content-type: application/json
@@ -28,7 +30,7 @@ content-type: application/json
 # GET http://localhost:3333/auth
 
 ### DELETE USER WITH GIVEN ID
-# DELETE http://localhost:3333/auth/2
+DELETE http://localhost:3333/auth/10
 
 ## UPDATE USER WITH GIVEN ID
 PATCH http://localhost:3333/auth/1
