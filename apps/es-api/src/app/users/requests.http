@@ -1,18 +1,27 @@
-# POST http://localhost:3333/auth/signup
-# content-type: application/json
+### Sign up user
+POST http://localhost:3333/auth/signup
+content-type: application/json
 
-# {
-#   "email": "test2@test.com",
-#   "password": "asdfasdf"
-# }
+{
+  "email": "test4@test4.com",
+  "password": "asdasdasdasd"
+}
 
+
+### Sign in as an existsing user
 POST http://localhost:3333/auth/signin
 content-type: application/json
 
 {
-  "email": "test2@test.com",
-  "password": "asdfasdf"
+  "email": "test4@test4.com",
+  "password": "asdasdasdasd"
 }
+
+### Sign out an existsing user
+POST http://localhost:3333/auth/signout
+
+### Get me
+GET http://localhost:3333/auth/me
 
 # GET http://localhost:3333/auth/1
 # content-type: application/json
@@ -21,12 +30,12 @@ content-type: application/json
 # GET http://localhost:3333/auth
 
 ### DELETE USER WITH GIVEN ID
-# DELETE http://localhost:3333/auth/2
+DELETE http://localhost:3333/auth/10
 
-### UPDATE USER WITH GIVEN ID
-# PATCH http://localhost:3333/auth/1
-# content-type: application/json
+## UPDATE USER WITH GIVEN ID
+PATCH http://localhost:3333/auth/1
+content-type: application/json
 
-# {
-#   "email": "test@test.com"
-# }
+{
+  "email": "test@test.com"
+}
